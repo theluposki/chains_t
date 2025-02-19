@@ -1,0 +1,13 @@
+{
+  "name": "chains_t",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start":"node src/index.mjs",
+    "dev":"node --watch src/index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
