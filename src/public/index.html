@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/assets/logo-32x32.png" type="image/png" />
+    <title>Wallet</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <img src="assets/logo-192x192.png" width="50px" height="50px" />
+
+        <div class="menu">
+          <button class="btn visible" id="handle_createWallet">
+            Criar carteira
+          </button>
+          <div class="balance hidden" id="balance">0</div>
+        </div>
+      </header>
+
+      <main class="main main-public" id="main_public">main public</main>
+
+      <main class="main main-private" id="main_private">
+        <div class="address"><b>my address: </b><span id="address"></span></div>
+
+        <div class="trasaction">
+          <fieldset>
+            <legend>Nova transação</legend>
+            <label for="recepient">
+              digite ou cole o endereço do recepitario
+            </label>
+            <div class="group">
+              <input
+                type="text"
+                class="input"
+                id="recepient"
+                placeholder="endereço do recepitario"
+              />
+              <button class="btn" id="paste_address">colar</button>
+            </div>
+            <label for="amount">digite o valor a a enviar</label>
+            <input
+              type="number"
+              class="input"
+              id="amount"
+              placeholder="Ex: 1000"
+            />
+            <p class="message" id="message"></p>
+            <button class="btn" id="handle_send_transaction">Enviar para pool.</button>
+          </fieldset>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="app.mjs"></script>
+  </body>
+</html>
